@@ -1,0 +1,67 @@
+# ---------------------------
+# OS / Editor cruft
+# ---------------------------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# ---------------------------
+# Python
+# ---------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.build/
+dist/
+build/
+.eggs/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.ipynb_checkpoints/
+.python-version
+
+# ---------------------------
+# Env & secrets
+# ---------------------------
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# ---------------------------
+# Spark / PySpark
+# ---------------------------
+spark-warehouse/
+metastore_db/
+derby.log
+.sparkStaging/
+.history
+
+# Spark output markers & temp dirs
+**/_SUCCESS
+**/_committed_*
+**/_started_*
+**/_temporary/
+**/_spark_metadata/
+
+# Delta Lake logs
+**/_delta_log/
+
+# ---------------------------
+# Logs
+# ---------------------------
+logs/
+*.log
