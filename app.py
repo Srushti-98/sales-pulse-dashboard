@@ -4,7 +4,8 @@ from pathlib import Path
 import streamlit as st
 import plotly.express as px
 
-CURATED = Path("data/curated")
+BASE = Path(__file__).resolve().parent
+CURATED = BASE / "data" / "curated"   # <-- robust path for Render
 
 st.set_page_config(page_title="Sales Pulse", layout="wide")
 
